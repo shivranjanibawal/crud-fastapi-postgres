@@ -1,0 +1,9 @@
+fastapi #API framework
+uvicorn # asgi server to run fastapicode on network port
+sqlalchemy # ORM or DB operations 
+psycopg2-binary #postgresql driver without this postgre will not connect
+pydantic #data validation (schemas)
+python-dotenv #for environement variable management, .env files, Local + CI config, Avoid hardcoding DB passwords
+pytest # run automated tests
+httpx # to test fatsapi endpoints asynchronously
+alembic #Database migrations, Schema versioning, Required in real projects

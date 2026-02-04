@@ -1,0 +1,10 @@
+# POSTGRESQL CONNECTIONS 
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker, declarative_base
+
+DATABASE_URL = "postgresql://crud_user:crud_pass@localhost:5432/crud_db"
+
+
+engine = create_engine(DATABASE_URL)
+SessionLocal = sessionmaker(bind=engine)
+Base = declarative_base()
